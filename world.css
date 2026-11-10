@@ -1,1 +1,92 @@
-/* Add your own styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f7fa;
+  color: #2d3748;
+}
+
+header {
+  background: #4a5568;
+  color: #fff;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#controls label {
+  font-weight: 600;
+}
+
+#country {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+}
+
+#lookup {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #38b2ac;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#lookup:hover {
+  background: #2c9a94;
+}
+
+#result {
+  margin-top: 1.5rem;
+}
+
+#result ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 1.25rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+
+#result li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+#result li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 500px) {
+  #controls {
+    flex-wrap: wrap;
+  }
+
+  #country {
+    flex-basis: 100%;
+  }
+}
