@@ -17,20 +17,31 @@ header {
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.75rem;
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Rokkitt", Georgia, serif;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  color: #fff;
 }
 
 main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
 }
 
 #controls {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
 }
 
 #controls label {
@@ -38,27 +49,42 @@ main {
 }
 
 #country {
-  flex: 1;
-  padding: 0.6rem 0.8rem;
-  font-size: 1rem;
-  border: 1px solid #cbd5e0;
-  border-radius: 4px;
+  flex: 0 0 100%;
+  max-width: 460px;
+  padding: 0.45rem 0.7rem;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: #4a5568;
+  background: #fff;
+  border: 1px solid #dfe5ec;
+  border-radius: 3px;
+}
+
+#country:focus {
+  outline: none;
+  border-color: #3b9fd8;
+}
+
+#controls button {
+  padding: 0.4rem 0.9rem;
+  font-family: inherit;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 #lookup {
-  padding: 0.6rem 1.5rem;
-  font-size: 1rem;
-  color: #fff;
-  background: #38b2ac;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  background: #3bb8a8;
 }
 
 #lookup:hover {
   background: #2c9a94;
 }
 
+/* E3 styling
 #result {
   margin-top: 1.5rem;
 }
@@ -90,3 +116,44 @@ main {
     flex-basis: 100%;
   }
 }
+*/
+
+/*E4 styling*/
+#result {
+  overflow-x: auto;
+}
+
+#result table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #e3e8ef;
+}
+
+#result th,
+#result td {
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #e8edf3;
+  text-align: left;
+}
+
+#result th {
+  font-weight: 600;
+  text-align: center;
+  color: #3d4654;
+  background: #fff;
+}
+
+#result td {
+  font-size: 0.78rem;
+  color: #6b7482;
+}
+
+#result tbody tr:nth-child(even) {
+  background: #f6f9fc;
+}
+
+#result p {
+  text-align: center;
+}
+/*End of E4 styling*/
